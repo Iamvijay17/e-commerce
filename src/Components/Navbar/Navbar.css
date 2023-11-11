@@ -1,0 +1,36 @@
+.navbar{
+  background: #007dbc;
+  
+}
+
+.navbar a, nav-item{
+  color: #fff;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
+
+.dropdown-menu {
+  top: 100%;
+  right: 2%;
+  border: 0;
+}
+
+
+.nav-item a{
+  text-decoration: none;
+  
+}
+.nav-item a:hover{
+  color: #ffd601;
+}
+
+.nav-item a:hover:active{
+	transform: scale(1.05);
+}
+

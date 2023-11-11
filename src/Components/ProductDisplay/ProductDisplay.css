@@ -1,0 +1,112 @@
+.side-thumb {
+  width: 85px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+.big-img {
+  width: 370px;
+  margin-left: 25px;
+  border-radius: 3px;
+}
+
+.productName {
+  font-size: 24px;
+}
+
+.productPrice1 {
+  font-size: 48px;
+}
+
+.productShipTag {
+  color: gray;
+}
+
+.btn-smm {
+  min-width: 1.8em;
+  height: 23px;
+  font-size: 9px;
+  padding: 1em;
+ 
+}
+
+.product-prices {
+    margin: 0;
+    height: 3em;
+    min-width: 5em;
+    display: inline-block;
+    color: #fff;
+    background: #E5D8C3;
+    background-clip: padding-box;
+    border-radius: .5em;
+    line-height: 1;
+}
+
+.product-prices .list-price,
+.product-prices .price {
+    height: 100%;
+    padding: .5em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.product-prices .list-price {
+    margin-right: -.1em;
+    max-width: 50%;
+    background: #F15F22;
+    border-top-left-radius: .5em;
+    border-bottom-left-radius: .5em;
+}
+
+.product-prices s {
+   padding: 0 1em 0 0;
+   display: block;
+   margin-top: -10px;
+}
+
+.csstransforms .product-prices s {
+    position: relative;
+    text-decoration: none;
+	
+}
+.csstransforms .product-prices s::before {
+    position: absolute;
+    border-top: .1em solid;
+    top: 50%;
+    width: 100%;
+    content: '';
+    transform: rotate(-20deg);
+}
+
+.product-prices .price {
+    width: 50%;
+    height: 100%;
+    padding: .25em;
+    color: #F15F22;
+    background: #E5D8C3;
+    background-clip: padding-box;
+    border-top-right-radius: .5em;
+    border-bottom-right-radius: .5em;
+    font-size: 2em;
+    font-weight: 900;
+    text-align: right;
+}
+
+.product-prices .price .cents {
+    margin-left: -.5em;
+    position: relative;
+    top: -.625em;
+    font-size: .5em;
+}
+
+
+
+
+/* .btn:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+
+} */
+.btn:hover:active{
+	transform: scale(1.05);
+}

@@ -1,0 +1,14 @@
+.descriptionBox{
+    margin-top: 5%;
+    
+}
+
+.descriptionBox img{
+    width: 40px;
+}
+
+.descriptionSubText{
+    font-size: small;
+    color: gray;
+    margin-top: 2px;
+}

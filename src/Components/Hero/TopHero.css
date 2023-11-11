@@ -1,0 +1,15 @@
+img{
+    
+    width: 75%;
+}
+
+.tophero{
+    background-color: #ffffff;
+    padding: 3%;
+    text-align: center;
+}
+.tophero a{
+    text-decoration: none;
+    color: black;
+    
+}
