@@ -6,7 +6,7 @@
   .register-photo .image-holder {
     display:table-cell;
     width:auto;
-    background:url(https://source.unsplash.com/random);
+    background:url(https://source.unsplash.com/random?fashion);
     background-size:cover;
   }
   

@@ -37,6 +37,8 @@ function RegisterAndLogin() {
     }
   };
 
+
+
   return (
     <div>
       <div className="register-photo">
@@ -94,9 +96,13 @@ function RegisterAndLogin() {
                 {login ? "SignIn" : "Signup"}
               </button>
             </div>
-            <a href="/login" className="already">
-              You already have an account? Login here.
-            </a>
+
+            <s className="already" >
+              {login? 
+            <button className="btn btn-sm shadow-none  border-0 " onClick={()=>setLogin(false)}>You don't have an account? Click here.</button>:
+            <button className="btn btn-sm shadow-none  border-0 " onClick={()=>setLogin(true)}>You already have an account? Login here.</button>
+              }
+            </s>
           </form>
 
           {/* signup End  */}

@@ -1,7 +1,7 @@
 let all_productData = [
   {
     id: 1,
-    brand: "DOMYOS",
+    brand: "puma",
     name: "Men's Cotton Gym T-Shirt Regular Fit Sportee 100 - Black",
     category: "mens",
     image:

@@ -6,7 +6,7 @@ import data_product from '../Assests/data'
 const SimilarProducts = () => {
   return (
     <div className='container1 d-flex flex-wrap'>
-      <h1>Similar Products</h1>
+      <p className=''>Similar Products</p>
       <hr />
       <div>
       {data_product.map((item, i) => {
