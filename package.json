@@ -10,6 +10,7 @@
     "bootstrap": "^5.3.2",
     "bootstrap4-min-css": "1.0.1",
     "firebase": "^10.6.0",
+    "npm": "^10.2.3",
     "prop-types": "15.7.2",
     "react": "^18.2.0",
     "react-credit-card": "0.20.0",
