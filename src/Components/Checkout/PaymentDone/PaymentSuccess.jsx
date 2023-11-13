@@ -37,7 +37,7 @@ const PaymentSuccess = () => {
                     </div>
                 </div>
                 <div className='text-center'>
-                   <Link to="/home"> <a className='btn btn-sm btn-success shadow-none me-5'>Done </a></Link>
+                    <a className='btn btn-sm btn-success shadow-none me-5'href="/home">Done </a>
                     <a className='btn btn-sm btn-outline-danger shadow-none ' download="Invoice" href="https://slicedinvoices.com/pdf/wordpress-pdf-invoice-plugin-sample.pdf">Download Recipt
 
                     </a>
