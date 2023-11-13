@@ -33,15 +33,25 @@ const TopHero = () => {
         <div className="col">
             <a> <img src="https://contents.mediadecathlon.com/s1031709/k$b6bca5fc22b7a812a167ddeec20a5d62/Frame%20427320780.png?format=auto&quality=70&f=440x0" alt="" /> <p className=' text'>Accessories</p></a>
         </div>
+
+
         <div className="col">
-            <a> <img src="https://contents.mediadecathlon.com/s1031707/k$7a456d60d3415dce803becbbdc0864fb/Frame%20427320778.png?format=auto&quality=70&f=440x0" alt="" /><p className=' text'>Travel Essentials</p> </a>
+            <Link to='/TravelEssentialsEquipment'><a> <img src="https://contents.mediadecathlon.com/s1031707/k$7a456d60d3415dce803becbbdc0864fb/Frame%20427320778.png?format=auto&quality=70&f=440x0" alt="" /><p className=' text'>Travel Essentials</p> </a></Link>
         </div>
+
+
         <div className="col">
            <Link to="/mens/shoes"> <a> <img src="https://contents.mediadecathlon.com/s1031706/k$b8ddc98255d6b8c0111026151832941b/Frame%20427320779.png?format=auto&quality=70&f=440x0" alt="" /><p className=' text'>Shoes</p> </a></Link>
         </div>
+
+
         <div className="col">
-            <a> <img src="https://contents.mediadecathlon.com/s1031712/k$a1fa5cd71f5efa4209a6750ee4fea7ab/Frame%20427320781.png?format=auto&quality=70&f=440x0" alt="" /> <p className=' text'>Sports Equipment</p></a>
+          <Link to='/SportsEquipment'>
+          <a> <img src="https://contents.mediadecathlon.com/s1031712/k$a1fa5cd71f5efa4209a6750ee4fea7ab/Frame%20427320781.png?format=auto&quality=70&f=440x0" alt="" /> <p className=' text'>Sports Equipment</p></a>
+          </Link>
         </div>
+
+
       </div>
     </div>
   )

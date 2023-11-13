@@ -8,8 +8,14 @@ import Cart from "./Pages/Cart";
 import "./App.css";
 
 import {
+  KidsBannerTop,
+  KidsBannerTop1,
+  TravelEssentialsEquipmentBannerTop,
+  WinterCollectionBannerTop,
   kidsBannerTop,
   mensBannerTop,
+  offerBannerTop,
+  shoesBannerTop,
 } from "./Components/Hero/HeroPages/ImgLinks";
 import Checkout from "./Components/Checkout/Checkout";
 import PaymentSuccess from "./Components/Checkout/PaymentDone/PaymentSuccess";
@@ -18,6 +24,8 @@ import ForgotPassword from "./firebase/ForgotPassword";
 import PasswordLogin from "./firebase/PasswordLogin";
 import ShopSubCategory from "./Pages/ShopSubCategory";
 import ShopOffCategory from "./Pages/ShopOffCategory";
+import HeroSection1 from "./Components/Hero/HeroPages/HeroSection1";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -35,10 +43,10 @@ function App() {
           />
 
           <Route
-            path="/womens"
+            path="/kids"
             element={[
               <NavBar />,
-              <ShopCategory banner={kidsBannerTop} category="womens" />,
+              <ShopCategory banner={KidsBannerTop1} category="kids" />,
             ]}
           />
           {/* SubCatogory  */}
@@ -46,21 +54,35 @@ function App() {
             path="/mens/shoes"
             element={[
               <NavBar />,
-              <ShopSubCategory banner={mensBannerTop} subcategory="mensshoes" />,
+              <ShopSubCategory banner={shoesBannerTop} subcategory="mensshoes" />,
             ]}
           />
           <Route
             path="/mens/wintercollection"
             element={[
               <NavBar />,
-              <ShopSubCategory banner={mensBannerTop} subcategory="WinterCollection" />,
+              <ShopSubCategory banner={WinterCollectionBannerTop} subcategory="WinterCollection" />,
+            ]}
+          />
+          <Route
+            path="/SportsEquipment"
+            element={[
+              <NavBar />,
+              <ShopSubCategory banner={mensBannerTop} subcategory="SportsEquipment" />,
+            ]}
+          />
+          <Route
+            path="/TravelEssentialsEquipment"
+            element={[
+              <NavBar />,
+              <ShopSubCategory banner={TravelEssentialsEquipmentBannerTop} subcategory="TravelEssentialsEquipment" />,
             ]}
           />
           <Route
             path="/sale50%"
             element={[
               <NavBar />,
-              <ShopOffCategory banner={mensBannerTop} discount="45%" />,
+              <ShopOffCategory banner={offerBannerTop} discount="45%" />,
             ]}
           />
 
@@ -79,6 +101,7 @@ function App() {
           <Route path="/reset" element={<ForgotPassword />} />
           <Route path="/home" element={[<NavBar />, <Shop />]} />
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );

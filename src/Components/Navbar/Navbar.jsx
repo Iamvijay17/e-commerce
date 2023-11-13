@@ -40,7 +40,7 @@ function Navbar  ()  {
               </li>
               <li className="nav-item">
 
-                <Link to='/womens'><a className="nav-link">Womens</a></Link>
+                <Link to='/kids'><a className="nav-link">Kids</a></Link>
               </li>
               <li className="nav-item">
 
