@@ -26,6 +26,7 @@ import ShopSubCategory from "./Pages/ShopSubCategory";
 import ShopOffCategory from "./Pages/ShopOffCategory";
 import HeroSection1 from "./Components/Hero/HeroPages/HeroSection1";
 import Footer from "./Components/Footer/Footer";
+import About from "./Components/About/About";
 
 function App() {
   return (
@@ -99,6 +100,7 @@ function App() {
           />
 
           <Route path="/reset" element={<ForgotPassword />} />
+          <Route path="/about" element={[<NavBar />, <About />]} />
           <Route path="/home" element={[<NavBar />, <Shop />]} />
         </Routes>
         <Footer/>

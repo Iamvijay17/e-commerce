@@ -26,7 +26,9 @@ function Navbar  ()  {
     <div>
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
+
           <a className="navbar-brand" href="/home">Fashion Pass</a>
+
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -56,6 +58,7 @@ function Navbar  ()  {
           <div className="d-flex ">
             <div className='position-relative'>
               <Link to='/cart'><a className=' text-decoration-none me-5 fs-5 '><i className="fa-solid fa-cart-shopping "></i></a></Link>
+
               <span className="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger">
                 {getTotalCartItems()}
                 <span className="visually-hidden">unread messages</span>
@@ -63,7 +66,7 @@ function Navbar  ()  {
             </div>
 
             <div className='dropdown'>
-              <a href="/cart" className=' text-decoration-none' data-bs-toggle="dropdown"><i className="fa-solid fa-user me-3"></i>My Account</a>
+              <a href="/cart" className=' text-decoration-none myacc' data-bs-toggle="dropdown"><i className="fa-solid fa-user me-3"></i>My Account</a>
               <ul className="dropdown-menu ">
                 <li><a className="dropdown-item text-black-50 " href="#">My Account</a></li>
                 <li><a className="dropdown-item text-black-50 " href="#">Order History</a></li>

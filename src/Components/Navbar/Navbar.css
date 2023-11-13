@@ -26,7 +26,17 @@
   text-decoration: none;
   
 }
+.navbar-brand:hover{
+  color: #ffd501;
+}
+
 .nav-item a:hover{
+  color: #ffd601;
+}
+.fa-cart-shopping:hover{
+  color: #ffd601;
+}
+.myacc:hover{
   color: #ffd601;
 }
 
