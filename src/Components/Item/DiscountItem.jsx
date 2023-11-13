@@ -1,13 +1,13 @@
 import React from 'react'
 import './Item.css'
-
+import { Link } from 'react-router-dom'
 
 const DiscountItem = (props) => {
   return (
 
     <div className=" product-card with-discount shadow  m-4 d-inline-flex">
         <div className="product-image">
-          <img className='w-100' src={props.image} />
+        <Link to={`/product/${props.id}`}><img className='w-100' src={props.image} /></Link>
           {/* <div className="tag-discount">25%</div>  */}
           <div className="ribbon text-center"><span>{props.discount}</span></div>
         </div>

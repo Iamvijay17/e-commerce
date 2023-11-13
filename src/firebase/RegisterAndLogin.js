@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import "./RegisterAndLogin.css";
+
+
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { database } from "./config";
 import { useNavigate } from "react-router-dom";
+import swal from "sweetalert";
 
 function RegisterAndLogin() {
   const [login, setLogin] = useState(false);
@@ -22,7 +25,12 @@ function RegisterAndLogin() {
           history("/home");
         })
         .catch((err) => {
-          alert(err.code);
+          // swal((err.code), "You clicked the button!", "error");
+          swal({
+            icon: "error",
+            title: (err.code),
+          });
+          // alert(err.code);
           setLogin(true)
         });
     } else {
@@ -32,7 +40,12 @@ function RegisterAndLogin() {
           history("/home");
         })
         .catch((err) => {
-          alert(err.code);
+          // swal((err.code), "You clicked the button!", "error");
+          swal({
+            icon: "success",
+            title: (err.code),
+          });
+          // alert(err.code);
         });
     }
   };

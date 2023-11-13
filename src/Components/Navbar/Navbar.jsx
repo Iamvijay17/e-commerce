@@ -5,15 +5,102 @@ import { ShopContext } from '../../Context/ShopContext';
 import { database } from '../../firebase/config';
 import { signOut } from 'firebase/auth';
 
-function Navbar  ()  {
+function Navbar() {
 
-  const [login,setLogin] = useState(false)
+  const texts = ['Search for something…', 'Search for other…', 'One more search'];
+  const input = document.querySelector('#searchbox');
+  const animationWorker = function (input, texts) {
+    this.input = input;
+    this.defaultPlaceholder = this.input.getAttribute('placeholder');
+    this.texts = texts;
+    this.curTextNum = 0;
+    this.curPlaceholder = '';
+    this.blinkCounter = 0;
+    this.animationFrameId = 0;
+    this.animationActive = false;
+    this.input.setAttribute('placeholder', this.curPlaceholder);
 
-  const history=useNavigate()
+    this.switch = (timeout) => {
+      this.input.classList.add('imitatefocus');
+      setTimeout(
+        () => {
+          this.input.classList.remove('imitatefocus');
+          if (this.curTextNum == 0)
+            this.input.setAttribute('placeholder', this.defaultPlaceholder);
+          else
+            this.input.setAttribute('placeholder', this.curPlaceholder);
 
-  const handleClick = ()=>{
-    signOut(database).then(val=>{
-      console.log(val,'val');
+          setTimeout(
+            () => {
+              this.input.setAttribute('placeholder', this.curPlaceholder);
+              if (this.animationActive)
+                this.animationFrameId = window.requestAnimationFrame(this.animate)
+            },
+            timeout);
+        },
+        timeout);
+    }
+
+    this.animate = () => {
+      if (!this.animationActive) return;
+      let curPlaceholderFullText = this.texts[this.curTextNum];
+      let timeout = 900;
+      if (this.curPlaceholder == curPlaceholderFullText + '|' && this.blinkCounter == 3) {
+        this.blinkCounter = 0;
+        this.curTextNum = (this.curTextNum >= this.texts.length - 1) ? 0 : this.curTextNum + 1;
+        this.curPlaceholder = '|';
+        this.switch(3000);
+        return;
+      }
+      else if (this.curPlaceholder == curPlaceholderFullText + '|' && this.blinkCounter < 3) {
+        this.curPlaceholder = curPlaceholderFullText;
+        this.blinkCounter++;
+      }
+      else if (this.curPlaceholder == curPlaceholderFullText && this.blinkCounter < 3) {
+        this.curPlaceholder = this.curPlaceholder + '|';
+      }
+      else {
+        this.curPlaceholder = curPlaceholderFullText
+          .split('')
+          .slice(0, this.curPlaceholder.length + 1)
+          .join('') + '|';
+        timeout = 150;
+      }
+      this.input.setAttribute('placeholder', this.curPlaceholder);
+      setTimeout(
+        () => { if (this.animationActive) this.animationFrameId = window.requestAnimationFrame(this.animate) },
+        timeout);
+    }
+
+    this.stop = () => {
+      this.animationActive = false;
+      window.cancelAnimationFrame(this.animationFrameId);
+    }
+
+    this.start = () => {
+      this.animationActive = true;
+      this.animationFrameId = window.requestAnimationFrame(this.animate);
+      return this;
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    let aw = new animationWorker(input, texts).start();
+    input.addEventListener("focus", (e) => aw.stop());
+    input.addEventListener("blur", (e) => {
+      aw = new animationWorker(input, texts);
+      if (e.target.value == '') setTimeout(aw.start, 2000);
+    });
+  });
+
+
+  const [login, setLogin] = useState(false)
+
+  const history = useNavigate()
+
+  const handleClick = () => {
+    signOut(database).then(val => {
+      console.log(val, 'val');
       history('/')
     })
   }
@@ -29,9 +116,7 @@ function Navbar  ()  {
 
           <a className="navbar-brand" href="/home">Fashion Pass</a>
 
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
+
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
@@ -53,6 +138,8 @@ function Navbar  ()  {
 
 
             </ul>
+            <input className="form-control me-2 w-50" id="searchbox" type="text" name="searchbox" placeholder="Search" aria-label="Search" style={{ marginLeft: "13%" }} />
+
 
           </div>
           <div className="d-flex ">
@@ -74,7 +161,9 @@ function Navbar  ()  {
                 <li><button className="dropdown-item text-black-50 " onClick={handleClick}>Logout</button></li>
               </ul>
             </div>
-
+            <button className="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
           </div>
         </div>
       </nav>

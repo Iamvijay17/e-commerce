@@ -39,7 +39,7 @@ function App() {
             path="/mens"
             element={[
               <NavBar />,
-              <ShopCategory banner={mensBannerTop} category="mens" />,
+              <ShopCategory banner={mensBannerTop} category="mens" />,<Footer/>
             ]}
           />
 
@@ -47,7 +47,7 @@ function App() {
             path="/kids"
             element={[
               <NavBar />,
-              <ShopCategory banner={KidsBannerTop1} category="kids" />,
+              <ShopCategory banner={KidsBannerTop1} category="kids" />,<Footer/>
             ]}
           />
           {/* SubCatogory  */}
@@ -55,55 +55,55 @@ function App() {
             path="/mens/shoes"
             element={[
               <NavBar />,
-              <ShopSubCategory banner={shoesBannerTop} subcategory="mensshoes" />,
+              <ShopSubCategory banner={shoesBannerTop} subcategory="mensshoes" />,<Footer/>
             ]}
           />
           <Route
             path="/mens/wintercollection"
             element={[
               <NavBar />,
-              <ShopSubCategory banner={WinterCollectionBannerTop} subcategory="WinterCollection" />,
+              <ShopSubCategory banner={WinterCollectionBannerTop} subcategory="WinterCollection" />,<Footer/>
             ]}
           />
           <Route
             path="/SportsEquipment"
             element={[
               <NavBar />,
-              <ShopSubCategory banner={mensBannerTop} subcategory="SportsEquipment" />,
+              <ShopSubCategory banner={mensBannerTop} subcategory="SportsEquipment" />,<Footer/>
             ]}
           />
           <Route
             path="/TravelEssentialsEquipment"
             element={[
               <NavBar />,
-              <ShopSubCategory banner={TravelEssentialsEquipmentBannerTop} subcategory="TravelEssentialsEquipment" />,
+              <ShopSubCategory banner={TravelEssentialsEquipmentBannerTop} subcategory="TravelEssentialsEquipment" />,<Footer/>
             ]}
           />
           <Route
             path="/sale50%"
             element={[
               <NavBar />,
-              <ShopOffCategory banner={offerBannerTop} discount="45%" />,
+              <ShopOffCategory banner={offerBannerTop} discount="45%" />,<Footer/>
             ]}
           />
 
 
 
-          <Route path="/product" element={[<NavBar />, <Product />]}>
-            <Route path=":productId" element={[<NavBar />, <Product />]} />
+          <Route path="/product" element={[<NavBar />, <Product />,<Footer/>]}>
+            <Route path=":productId" element={[<NavBar />, <Product />,<Footer/>]} />
           </Route>
-          <Route path="/cart" element={[<NavBar />, <Cart />]} />
-          <Route path="/checkout" element={[<NavBar />, <Checkout />]} />
+          <Route path="/cart" element={[<NavBar />, <Cart />,<Footer/>]} />
+          <Route path="/checkout" element={[<NavBar />, <Checkout />,<Footer/>]} />
           <Route
             path="/paymentsuccess"
             element={[<NavBar />, <PaymentSuccess />]}
           />
 
           <Route path="/reset" element={<ForgotPassword />} />
-          <Route path="/about" element={[<NavBar />, <About />]} />
-          <Route path="/home" element={[<NavBar />, <Shop />]} />
+          <Route path="/about" element={[<NavBar />, <About />,<Footer/>]} />
+          <Route path="/home" element={[<NavBar />, <Shop />, <Footer/>]} />
         </Routes>
-        <Footer/>
+        
       </Router>
     </div>
   );
