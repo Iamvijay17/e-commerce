@@ -17,6 +17,7 @@ import RegisterAndLogin from "./firebase/RegisterAndLogin";
 import ForgotPassword from "./firebase/ForgotPassword";
 import PasswordLogin from "./firebase/PasswordLogin";
 import ShopSubCategory from "./Pages/ShopSubCategory";
+import ShopOffCategory from "./Pages/ShopOffCategory";
 
 function App() {
   return (
@@ -48,6 +49,23 @@ function App() {
               <ShopSubCategory banner={mensBannerTop} subcategory="mensshoes" />,
             ]}
           />
+          <Route
+            path="/mens/wintercollection"
+            element={[
+              <NavBar />,
+              <ShopSubCategory banner={mensBannerTop} subcategory="WinterCollection" />,
+            ]}
+          />
+          <Route
+            path="/sale50%"
+            element={[
+              <NavBar />,
+              <ShopOffCategory banner={mensBannerTop} discount="45%" />,
+            ]}
+          />
+
+
+
           <Route path="/product" element={[<NavBar />, <Product />]}>
             <Route path=":productId" element={[<NavBar />, <Product />]} />
           </Route>

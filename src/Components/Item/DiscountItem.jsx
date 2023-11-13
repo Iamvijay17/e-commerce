@@ -9,7 +9,7 @@ const DiscountItem = (props) => {
         <div className="product-image">
           <img className='w-100' src={props.image} />
           {/* <div className="tag-discount">25%</div>  */}
-          <div className="ribbon text-center"><span>{props.discount}%</span></div>
+          <div className="ribbon text-center"><span>{props.discount}</span></div>
         </div>
         <div className="product-detail">
           <div className="product-price-tag">
