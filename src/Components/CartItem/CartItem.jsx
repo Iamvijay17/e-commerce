@@ -4,7 +4,7 @@ import './CartItem.css'
 import { Link } from 'react-router-dom'
 
 const CartItem = () => {
-    const { getTotalCartAmount, all_productData, cartItems, removeFromCart } = useContext(ShopContext)
+    const { getTotalCartPrice, getTotalCartItems, all_productData, cartItems, removeFromCart } = useContext(ShopContext)
 
     return (
         <div className='container'>
@@ -57,8 +57,9 @@ const CartItem = () => {
                         <div className="row">
                             <div className="col">
                                 <p>Subtotal</p>
-                                <p>Subtotal</p>
+                                <p>GST</p>
                                 <p>Shipping</p>
+                                <p>No.of items</p>
                                 <p>Grand Total</p>
                             </div>
                         </div>
@@ -66,10 +67,11 @@ const CartItem = () => {
                     <div className="col">
                         <div className="row">
                             <div className="col">
-                                <p>₹ {getTotalCartAmount()}</p>
-                                <p>₹</p>
+                                <p>₹ {getTotalCartPrice()}</p>
+                                <p>Tax Free</p>
                                 <p>Free</p>
-                                <p>₹ {20}</p>
+                                <p> {getTotalCartItems()}</p>
+                                <p>₹ {getTotalCartPrice()}</p>
                             </div>
                         </div>
                     </div>

@@ -156,7 +156,7 @@ let all_productData = [
     brand: "KALENJI",
     name: "Men Running Shoes Run 100 - Grey",
     category: "mens",
-    
+
     image:
       "https://contents.mediadecathlon.com/p2174716/1e54ed7fc169abff9480eeca0569ab7b/p2174716.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -176,7 +176,7 @@ let all_productData = [
     brand: "NEWFEEL",
     name: "Men Walking Shoes PW 100 - Grey",
     category: "mens",
-    
+
     image:
       "https://contents.mediadecathlon.com/p2480578/c21fad97ed2d9a6e40a5cd484e2cab8f/p2480578.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -196,7 +196,7 @@ let all_productData = [
     brand: "QUECHUA",
     name: "Men's Hiking boots - NH100",
     category: "mens",
-    
+
     image:
       "https://contents.mediadecathlon.com/p1215767/f4afd2ff2a61bdc899baf89d8c9bdaac/p1215767.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -216,7 +216,7 @@ let all_productData = [
     brand: "KALENJI",
     name: "Men Running Shoes Active Grip - Green",
     category: "mens",
-    
+
     image:
       "https://contents.mediadecathlon.com/p2175064/a323df0c88381a47cf8c79a3a38aeb5f/p2175064.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -236,7 +236,7 @@ let all_productData = [
     brand: "KALENJI",
     name: "Men Running Shoes Run Active - Dark Blue",
     category: "mens",
-    
+
     image:
       "https://contents.mediadecathlon.com/p2155551/11e0e6f8f6f4906c580007288ce1bdd0/p2155551.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -256,7 +256,7 @@ let all_productData = [
     brand: "FORCLAZ",
     name: "Men Waterproof Trekking Boots 100 Grey",
     category: "mens",
-    
+
     image:
       "https://contents.mediadecathlon.com/p1692773/33a46f2e8c97968fe17f38c64ef39067/p1692773.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -276,7 +276,7 @@ let all_productData = [
     brand: "QUECHUA",
     name: "Men Waterproof Hiking Shoes MH100 Khaki",
     category: "mens",
-    
+
     image:
       "https://contents.mediadecathlon.com/p1800776/19118e285d0a337cd3f8b4cf129c5f2c/p1800776.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -296,7 +296,7 @@ let all_productData = [
     brand: "QUECHUA",
     name: "Men’s Snow Hiking Warm and Waterproof Boots - SH100 ULTRA-WARM",
     category: "mens",
-    
+
     image:
       "https://contents.mediadecathlon.com/p1647816/2479e9814c12758f5184356b0913cb33/p1647816.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -316,7 +316,7 @@ let all_productData = [
     brand: "QUECHUA",
     name: "Men’s Waterproof Hiking Boots NH150 Mid WP Black",
     category: "mens",
-    
+
     image:
       "https://contents.mediadecathlon.com/p1956680/24781a543afac06cbec2fed0cb0633de/p1956680.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -335,7 +335,7 @@ let all_productData = [
     brand: "QUECHUA",
     name: "Men Hiking Shoes NH100 Dark Blue",
     category: "mens",
-    
+
     image:
       "https://contents.mediadecathlon.com/p2160685/5fa56ad2f5aaa015705df3b738f6b19f/p2160685.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -355,7 +355,7 @@ let all_productData = [
     brand: "QUECHUA",
     name: "Men's Snow Hiking Shoes WARM & WATERPROOF SH100 U-WARM High - Black",
     category: "mens",
-    
+
     image:
       "https://contents.mediadecathlon.com/p2047848/bbe4079153bb839d56635025bb357a70/p2047848.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -375,7 +375,7 @@ let all_productData = [
     brand: "KALENJI",
     name: "Men Running Shoes JOGFLOW 500.1- Black",
     category: "mens",
-    
+
     image:
       "https://contents.mediadecathlon.com/p2153179/e958b22d2eccd9c7db0fea1da358fd8f/p2153179.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -390,6 +390,55 @@ let all_productData = [
     new_price: 3099,
     old_price: 4999,
   },
-]
+  {
+    id: 23,
+    brand: "QUECHUA",
+    name: "Men Sweater Half-Zip Fleece for Hiking MH100 Black",
+    category: "mens",
+
+    image:
+      "https://contents.mediadecathlon.com/p1714205/187312dea5b52d7997f4cfe09ac3ec92/p1714205.jpg?format=auto&quality=70&f=650x0",
+    image1:
+      "https://contents.mediadecathlon.com/p1714139/27c679bdb1b8c0297174eaa219732225/p1714139.jpg?format=auto&quality=70&f=650x0",
+    image2:
+      "https://contents.mediadecathlon.com/p1714216/6c8ba1939af8063a348811ba7231d7e6/p1714216.jpg?format=auto&quality=70&f=650x0",
+    image3:
+      "https://contents.mediadecathlon.com/p1714166/1853dcb7379db4100034c6f419b88959/p1714166.jpg?format=auto&quality=70&f=650x0",
+    image4:
+      "https://contents.mediadecathlon.com/p1714150/498df39150c64dfdd7878f15b0540d0f/p1714150.jpg?format=auto&quality=70&f=650x0",
+    discount: "45%",
+    new_price: 499,
+    old_price: 599,
+   
+  },
+  {
+    id: 24,
+    brand: "DOMYOS",
+
+    name: "Men's Cotton Gym T-Shirt Regular Fit Athletee 100 - Blue",
+    category: "mens",
+    sub_category: "mens",
+
+    image:
+      "https://contents.mediadecathlon.com/p2450387/34ba4b927825e1fcdfa4bec2b5cfd4ab/p2450387.jpg?format=auto&quality=70&f=650x0",
+    image1:
+      "https://contents.mediadecathlon.com/p2450386/e733d4b88b0da89281803516482127ef/p2450386.jpg?format=auto&quality=70&f=650x0",
+    image2:
+      "https://contents.mediadecathlon.com/p2450385/9de9ff63d8397e2896a35b4a9f253162/p2450385.jpg?format=auto&quality=70&f=650x0",
+    image3:
+      "https://contents.mediadecathlon.com/p2450384/3db6037ac1769f23fb6479ec184c816f/p2450384.jpg?format=auto&quality=70&f=650x0",
+    image4:
+      "https://contents.mediadecathlon.com/p2450383/d97f51f237b1c9a6e5f1dc17fc72f7fb/p2450383.jpg?format=auto&quality=70&f=650x0",
+    image5:
+      "https://contents.mediadecathlon.com/p2450382/c690e7784cbd506eda9ff50499f419bc/p2450382.jpg?format=auto&quality=70&f=650x0",
+    discount: "45%",
+    new_price: 299,
+    old_price: 499,
+    "data": [
+      { "type": "comments", "id": "5" },
+      { "type2": "comments", "id": "12" }
+    ]
+  },
+];
 
 export default all_productData;

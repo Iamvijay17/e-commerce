@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Stepper, Step } from 'react-form-stepper';
 import './Checkout.css'
 import CreditCard from './CreditCard/CreditCard';
-
+import { Link } from 'react-router-dom';
 
 
 function Checkout() {
@@ -78,9 +78,9 @@ function Checkout() {
           <CreditCard/>
          
           <div className='text-center'>
-            <form action="/paymentsuccess">
+            <form>
             <button onClick={() => setGoSteps(1)} className='btn btn-danger shadow-none me-5'>Back</button>
-            <button type='submit' className='btn btn-primary shadow-none'>Submit</button>
+            <Link to="/paymentsuccess"><button type='submit' className='btn btn-primary shadow-none'>Submit</button></Link>
             </form>
           </div>
         </div>

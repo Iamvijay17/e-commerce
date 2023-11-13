@@ -2,6 +2,7 @@ import React, { createContext, useState } from 'react'
 import all_productData from '../Components/Assests/all_productData';
 
 
+
 export const ShopContext = createContext(null);
 
 const getDefaultCart = () => {
@@ -25,6 +26,18 @@ const ShopContextProvider = (props) => {
         setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }))
     }
 
+    // Total Price funtions 
+
+    const getTotalCartPrice = () => {
+        let totalPrice = 0;
+        for (let item in cartItems) {
+            if (cartItems[item] > 0) {
+                let itemInfo = all_productData.find((pro) => pro.id === Number(item))
+                totalPrice += itemInfo.new_price * cartItems[item];
+            }
+        }
+        return totalPrice;
+    }
 
 
     const getTotalCartItems = () => {
@@ -38,22 +51,11 @@ const ShopContextProvider = (props) => {
     }
 
 
-
-    // Total Price funtions 
-    const getTotalCartAmount = () => {
-        let totalAmount = 0;
-        for (const item in cartItems) {
-            if (cartItems[item] > 0) {
-                let itemInfo = all_productData.find((product) => product.id === Number(item))
-                totalAmount += itemInfo.new_price * cartItems[item]
-            }
-            console.log(totalAmount);
-            return totalAmount;
-        }
-    }
+   
 
 
-    const contextValue = { getTotalCartAmount, getTotalCartItems, all_productData, cartItems, addToCart, removeFromCart };
+    const contextValue = { getTotalCartPrice, getTotalCartItems, all_productData, cartItems, addToCart, removeFromCart };
+
     return (
         <ShopContext.Provider value={contextValue}>
             {props.children}

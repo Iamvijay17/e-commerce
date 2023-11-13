@@ -2,12 +2,13 @@ import React from 'react'
 import './DescriptionBox.css'
 import { descriptionImg1, descriptionImg2, descriptionImg3, descriptionImg4, descriptionImg5, descriptionImg6 } from '../Assests/Product_Img'
 
-const DescriptionBox = () => {
+const DescriptionBox = (props) => {
+    const { dis } = props;
   return (
     <div>
       <div className="container descriptionBox ">
         <div className="row">
-            <p>Made for</p> <p>Our designers developed this padded jacket for your mountain outings in cold weather with temperatures between 10°C and -0°C (with thermal layering).</p>
+            <p>Made for</p> <p>sample</p>
         </div>
         <div className="row">Advantages</div>
         <div className="row mt-3 ">

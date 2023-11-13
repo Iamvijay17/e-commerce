@@ -56,12 +56,12 @@ const ProductDisplay = (props) => {
                     <div className="row">
                         <div className="col mb-3">
                             SELECT SIZE
-                            <div className="btn-group ms-3" role="group" aria-label="Basic radio toggle button group">
+                            <div className="btn-group btn-group-sm  ms-3" role="group" aria-label="Basic radio toggle button group">
                                 <input type="radio" className="btn-check btn-smm shadow-none badge " name="btnradio" id="btnradio1" autoComplete="off" defaultChecked />
-                                <label className="btn sizetxt btn-smm btn-outline-secondary p-1 shadow-none" htmlFor="btnradio1">UK SIZE</label>
+                                <label className="btn sizetxt btn-smm  btn-outline-secondary p-1 shadow-none" htmlFor="btnradio1">UK SIZE</label>
 
-                                <input type="radio" className="btn-check btn-smm shadow-none" name="btnradio" id="btnradio2" autoComplete="off" />
-                                <label className="btn sizetxt btn-outline-secondary btn-smm p-1 shadow-none " htmlFor="btnradio2">BRAND SIZE</label>
+                                <input type="radio" className="btn-check btn-smm  shadow-none" name="btnradio" id="btnradio2" autoComplete="off" />
+                                <label className="btn sizetxt btn-outline-secondary  btn-smm p-1 shadow-none " htmlFor="btnradio2">BRAND SIZE</label>
 
 
                             </div>
