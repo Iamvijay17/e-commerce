@@ -16,6 +16,7 @@ import PaymentSuccess from "./Components/Checkout/PaymentDone/PaymentSuccess";
 import RegisterAndLogin from "./firebase/RegisterAndLogin";
 import ForgotPassword from "./firebase/ForgotPassword";
 import PasswordLogin from "./firebase/PasswordLogin";
+import ShopSubCategory from "./Pages/ShopSubCategory";
 
 function App() {
   return (
@@ -37,6 +38,14 @@ function App() {
             element={[
               <NavBar />,
               <ShopCategory banner={kidsBannerTop} category="womens" />,
+            ]}
+          />
+          {/* SubCatogory  */}
+          <Route
+            path="/mens/shoes"
+            element={[
+              <NavBar />,
+              <ShopSubCategory banner={mensBannerTop} subcategory="mensshoes" />,
             ]}
           />
           <Route path="/product" element={[<NavBar />, <Product />]}>

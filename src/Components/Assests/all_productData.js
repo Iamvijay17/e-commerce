@@ -156,7 +156,7 @@ let all_productData = [
     brand: "KALENJI",
     name: "Men Running Shoes Run 100 - Grey",
     category: "mens",
-
+    sub_category: "mensshoes",
     image:
       "https://contents.mediadecathlon.com/p2174716/1e54ed7fc169abff9480eeca0569ab7b/p2174716.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -176,7 +176,7 @@ let all_productData = [
     brand: "NEWFEEL",
     name: "Men Walking Shoes PW 100 - Grey",
     category: "mens",
-
+    sub_category: "mensshoes",
     image:
       "https://contents.mediadecathlon.com/p2480578/c21fad97ed2d9a6e40a5cd484e2cab8f/p2480578.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -196,7 +196,7 @@ let all_productData = [
     brand: "QUECHUA",
     name: "Men's Hiking boots - NH100",
     category: "mens",
-
+    sub_category: "mensshoes",
     image:
       "https://contents.mediadecathlon.com/p1215767/f4afd2ff2a61bdc899baf89d8c9bdaac/p1215767.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -216,7 +216,7 @@ let all_productData = [
     brand: "KALENJI",
     name: "Men Running Shoes Active Grip - Green",
     category: "mens",
-
+    sub_category: "mensshoes",
     image:
       "https://contents.mediadecathlon.com/p2175064/a323df0c88381a47cf8c79a3a38aeb5f/p2175064.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -236,7 +236,7 @@ let all_productData = [
     brand: "KALENJI",
     name: "Men Running Shoes Run Active - Dark Blue",
     category: "mens",
-
+    sub_category: "mensshoes",
     image:
       "https://contents.mediadecathlon.com/p2155551/11e0e6f8f6f4906c580007288ce1bdd0/p2155551.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -256,7 +256,7 @@ let all_productData = [
     brand: "FORCLAZ",
     name: "Men Waterproof Trekking Boots 100 Grey",
     category: "mens",
-
+    sub_category: "mensshoes",
     image:
       "https://contents.mediadecathlon.com/p1692773/33a46f2e8c97968fe17f38c64ef39067/p1692773.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -276,7 +276,7 @@ let all_productData = [
     brand: "QUECHUA",
     name: "Men Waterproof Hiking Shoes MH100 Khaki",
     category: "mens",
-
+    sub_category: "mensshoes",
     image:
       "https://contents.mediadecathlon.com/p1800776/19118e285d0a337cd3f8b4cf129c5f2c/p1800776.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -296,7 +296,7 @@ let all_productData = [
     brand: "QUECHUA",
     name: "Men’s Snow Hiking Warm and Waterproof Boots - SH100 ULTRA-WARM",
     category: "mens",
-
+    sub_category: "mensshoes",
     image:
       "https://contents.mediadecathlon.com/p1647816/2479e9814c12758f5184356b0913cb33/p1647816.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -316,7 +316,7 @@ let all_productData = [
     brand: "QUECHUA",
     name: "Men’s Waterproof Hiking Boots NH150 Mid WP Black",
     category: "mens",
-
+    sub_category: "mensshoes",
     image:
       "https://contents.mediadecathlon.com/p1956680/24781a543afac06cbec2fed0cb0633de/p1956680.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -335,7 +335,7 @@ let all_productData = [
     brand: "QUECHUA",
     name: "Men Hiking Shoes NH100 Dark Blue",
     category: "mens",
-
+    sub_category: "mensshoes",
     image:
       "https://contents.mediadecathlon.com/p2160685/5fa56ad2f5aaa015705df3b738f6b19f/p2160685.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -355,7 +355,7 @@ let all_productData = [
     brand: "QUECHUA",
     name: "Men's Snow Hiking Shoes WARM & WATERPROOF SH100 U-WARM High - Black",
     category: "mens",
-
+    sub_category: "mensshoes",
     image:
       "https://contents.mediadecathlon.com/p2047848/bbe4079153bb839d56635025bb357a70/p2047848.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -375,7 +375,7 @@ let all_productData = [
     brand: "KALENJI",
     name: "Men Running Shoes JOGFLOW 500.1- Black",
     category: "mens",
-
+    sub_category: "mensshoes",
     image:
       "https://contents.mediadecathlon.com/p2153179/e958b22d2eccd9c7db0fea1da358fd8f/p2153179.jpg?format=auto&quality=70&f=650x0",
     image1:
@@ -409,7 +409,6 @@ let all_productData = [
     discount: "45%",
     new_price: 499,
     old_price: 599,
-   
   },
   {
     id: 24,
@@ -417,7 +416,6 @@ let all_productData = [
 
     name: "Men's Cotton Gym T-Shirt Regular Fit Athletee 100 - Blue",
     category: "mens",
-    sub_category: "mens",
 
     image:
       "https://contents.mediadecathlon.com/p2450387/34ba4b927825e1fcdfa4bec2b5cfd4ab/p2450387.jpg?format=auto&quality=70&f=650x0",
@@ -434,11 +432,189 @@ let all_productData = [
     discount: "45%",
     new_price: 299,
     old_price: 499,
-    "data": [
-      { "type": "comments", "id": "5" },
-      { "type2": "comments", "id": "12" }
-    ]
   },
+  {
+    id: 25,
+    brand: "ARTENGO",
+
+    name: "Men Tennis Shoes - Multi Court TS100 Essential - Off White",
+    category: "mens",
+    sub_category: "mensshoes",
+
+    image:
+      "https://contents.mediadecathlon.com/p2449853/a9d41b7755c66504ea51802fb198e643/p2449853.jpg?format=auto&quality=70&f=650x0",
+    image1:
+      "https://contents.mediadecathlon.com/p2449853/a9d41b7755c66504ea51802fb198e643/p2449853.jpg?format=auto&quality=70&f=650x0",
+    image2:
+      "https://contents.mediadecathlon.com/p2449803/d14c5b9790660be02a61262b33c2aa06/p2449803.jpg?format=auto&quality=70&f=650x0",
+    image3:
+      "https://contents.mediadecathlon.com/p2449800/aab073b0c079743d00055802b092a856/p2449800.jpg?format=auto&quality=70&f=650x0",
+    image4:
+      "https://contents.mediadecathlon.com/p2449749/b5df0cad5bb2ad95e92e96aca99e1c25/p2449749.jpg?format=auto&quality=70&f=650x0",
+    image5:
+      "https://contents.mediadecathlon.com/p2449801/b87e36fed8fc797463d8702cc6d773ae/p2449801.jpg?format=auto&quality=70&f=650x0",
+    discount: "45%",
+    new_price: 1499,
+    old_price: 1999,
+  },
+
+  {
+    id: 26,
+    brand: "QUECHUA",
+    name: "Men’s Warm and Waterproof Hiking Boots - SH500 mountain MID",
+    category: "mens",
+    sub_category: "mensshoes",
+    image:
+      "https://contents.mediadecathlon.com/p2311527/f1b2f4bec3e71d9975fe0e72400a99ce/p2311527.jpg?format=auto&quality=70&f=650x0",
+    image1:
+      "https://contents.mediadecathlon.com/p2311525/640fd336151162fd83af0bf1f9e1cfa8/p2311525.jpg?format=auto&quality=70&f=650x0",
+    image2:
+      "https://contents.mediadecathlon.com/p2311524/5c50da13a23b58833fbcbb8eb126944e/p2311524.jpg?format=auto&quality=70&f=650x0",
+    image3:
+      "https://contents.mediadecathlon.com/p2311526/302e29e2d23d7029416aabcc87a6e32b/p2311526.jpg?format=auto&quality=70&f=650x0",
+    image4:
+      "https://contents.mediadecathlon.com/p2311523/f68d9e5b16ba626f838b4c216cd96b55/p2311523.jpg?format=auto&quality=70&f=650x0",
+    image5:
+      "",
+    discount: "23%",
+    new_price: 4999,
+    old_price: 6299,
+   
+  },
+  {
+    id: 27,
+    brand: "SOLOGNAC",
+    name: "Men Boots 100 Waterproof Green",
+    category: "mens",
+    sub_category: "mensshoes",
+    image:
+      "https://contents.mediadecathlon.com/p2481096/88eec0d5c768a22594eb6489cece453f/p2481096.jpg?format=auto&quality=70&f=650x0",
+    image1:
+      "https://contents.mediadecathlon.com/p283060/c890eaf3c3f09177080a38bd69a9690a/p283060.jpg?format=auto&quality=70&f=650x0",
+    image2:
+      "https://contents.mediadecathlon.com/p1822030/7189bd386dd0822c6c554bc5ff9c584a/p1822030.jpg?format=auto&quality=70&f=650x0",
+    image3:
+      "https://contents.mediadecathlon.com/p1822694/34f0e14ad6468e843bd62476db330af0/p1822694.jpg?format=auto&quality=70&f=650x0",
+    image4:
+      "https://contents.mediadecathlon.com/p283061/c4fd6383dac57e54f0c5227e123bc5a8/p283061.jpg?format=auto&quality=70&f=650x0",
+    image5:
+      "",
+    discount: "45%",
+    new_price: 2999,
+    old_price: 4499,
+   
+  },
+  {
+    id: 28,
+    brand: "KIPRUN",
+    name: "Men Marathon Running Shoes KN500 - Black Green",
+    category: "mens",
+    sub_category: "mensshoes",
+    image:
+      "https://contents.mediadecathlon.com/p2041615/e14d0aa3da5cb08f5673b8483a39dc00/p2041615.jpg?format=auto&quality=70&f=650x0",
+    image1:
+      "https://contents.mediadecathlon.com/p2530263/22e8d2f031ac161a722f2589f8c7182e/p2530263.jpg?format=auto&quality=70&f=650x0",
+    image2:
+      "https://contents.mediadecathlon.com/p2530623/cc7160ff61d58f6037da3548c2b30afe/p2530623.jpg?format=auto&quality=70&f=650x0",
+    image3:
+      "https://contents.mediadecathlon.com/p2530623/cc7160ff61d58f6037da3548c2b30afe/p2530623.jpg?format=auto&quality=70&f=650x0",
+    image4:
+      "https://contents.mediadecathlon.com/p2041616/1ac5cee51d36fa09ecb34060c9f77d71/p2041616.jpg?format=auto&quality=70&f=650x0",
+    image5:
+      "https://contents.mediadecathlon.com/p2041613/e768ae60b14817235c4975e0deb0d43c/p2041613.jpg?format=auto&quality=70&f=650x0",
+    discount: "45%",
+    new_price: 5499,
+    old_price: 8449,
+   
+  },
+  {
+    id: 29,
+    brand: "NEWFEELⓘ ",
+    name: "Men Urban Walking Shoes Soft 140.2 Mesh",
+    category: "mens",
+    sub_category: "mensshoes",
+    image:
+      "https://contents.mediadecathlon.com/p2265390/99dd7ea3b320abf1cebb3f6997feed67/p2265390.jpg?format=auto&quality=70&f=650x0",
+    image1:
+      "https://contents.mediadecathlon.com/p2265389/2fbd4233b7d80a5d63e5be16e731ad9b/p2265389.jpg?format=auto&quality=70&f=650x0",
+    image2:
+      "https://contents.mediadecathlon.com/p2265382/3a337264da2092e275d2745a7da0934a/p2265382.jpg?format=auto&quality=70&f=650x0",
+    image3:
+      "https://contents.mediadecathlon.com/p2265383/a8b2792b002a79d90f139b74255482a1/p2265383.jpg?format=auto&quality=70&f=650x0",
+    image4:
+      "https://contents.mediadecathlon.com/p2265386/7e6008dda7ad23fc5c0776c03e21be19/p2265386.jpg?format=auto&quality=70&f=650x0",
+    image5:
+      "https://contents.mediadecathlon.com/p2265385/7b4ea71a11e5bf9d3cac063c48fcbcae/p2265385.jpg?format=auto&quality=70&f=650x0",
+    discount: "65%",
+    new_price: 999,
+    old_price: 2999,
+   
+  },
+  {
+    id: 30,
+    brand: "QUECHUA",
+    name: "Men’s Hiking Boots - NH100 Mid",
+    category: "",
+    sub_category: "mensshoes",
+    image:
+      "https://contents.mediadecathlon.com/p2457687/6d4b0725f7b994e0472f0ce96cecb2aa/p2457687.jpg?format=auto&quality=70&f=650x0",
+    image1:
+      "https://contents.mediadecathlon.com/p2457687/6d4b0725f7b994e0472f0ce96cecb2aa/p2457687.jpg?format=auto&quality=70&f=650x0",
+    image2:
+      "https://contents.mediadecathlon.com/p2457688/65d11f3d95da6af07cdd60e1ffecafed/p2457688.jpg?format=auto&quality=70&f=650x0",
+    image3:
+      "https://contents.mediadecathlon.com/p2457689/6d6f4d8363daa80a60b38279812c4118/p2457689.jpg?format=auto&quality=70&f=650x0",
+    image4:
+      "https://contents.mediadecathlon.com/p2457689/6d6f4d8363daa80a60b38279812c4118/p2457689.jpg?format=auto&quality=70&f=650x0",
+    image5:
+      "https://contents.mediadecathlon.com/p2457689/6d6f4d8363daa80a60b38279812c4118/p2457689.jpg?format=auto&quality=70&f=650x0",
+    discount: "55%",
+    new_price: 1799,
+    old_price: 2999,
+   
+  },
+  {
+    id: 31,
+    brand: "TARMAK",
+    name: "Adult Basketball Shoes Mid Ankle Elevate 500 Black and Grey",
+    category: "mens",
+    sub_category: "mensshoes",
+    image:
+      "https://contents.mediadecathlon.com/p2154241/c9b07bb2a524ec98d2cc7a7f6ace1702/p2154241.jpg?format=auto&quality=70&f=650x0",
+    image1:
+      "https://contents.mediadecathlon.com/p2345254/059535c00c63888ce6c790791bfe25dc/p2345254.jpg?format=auto&quality=70&f=650x0",
+    image2:
+      "https://contents.mediadecathlon.com/p2345187/082749715bea38ba382e73cb287f414b/p2345187.jpg?format=auto&quality=70&f=650x0",
+    image3:
+      "https://contents.mediadecathlon.com/p2154234/c09cf58bcd4c27ff2d563cf4be8a7e21/p2154234.jpg?format=auto&quality=70&f=650x0",
+    image4:
+      "https://contents.mediadecathlon.com/p2345249/aa370413ceda306628b8291f39281073/p2345249.jpg?format=auto&quality=70&f=650x0",
+    image5:
+      "",
+    discount: "35%",
+    new_price: 5999,
+    old_price: 8999,
+   
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ];
 
 export default all_productData;
