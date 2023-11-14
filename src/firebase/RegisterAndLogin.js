@@ -42,7 +42,7 @@ function RegisterAndLogin() {
         .catch((err) => {
           // swal((err.code), "You clicked the button!", "error");
           swal({
-            icon: "success",
+            icon: "error",
             title: (err.code),
           });
           // alert(err.code);
