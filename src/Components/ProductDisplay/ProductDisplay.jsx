@@ -1,10 +1,11 @@
 import React, { useContext } from 'react'
 import './ProductDisplay.css'
 import { ShopContext } from '../../Context/ShopContext';
+import { Link } from 'react-router-dom';
 
 const ProductDisplay = (props) => {
     const { product } = props;
-    const {addToCart, removeFromCart} = useContext(ShopContext);
+    const {addToCart} = useContext(ShopContext);
     return (
         <div className='container mt-5'>
 
@@ -97,7 +98,7 @@ const ProductDisplay = (props) => {
                             
                         </div>
                         <div className="col">
-                            <button type="button" onClick={()=>{removeFromCart(product.id)}} className="btn btn-lg btn-warning rounded-pill text-white shadow-none"><i className="fa-solid fa-shop"></i> Buy Now</button>
+                            <Link to='/cart'><button type="button" onClick={()=>{addToCart(product.id)}} className="btn btn-lg btn-warning rounded-pill text-white shadow-none"><i className="fa-solid fa-shop"></i> Buy Now</button></Link>
                         </div>
                     </div>
                 </div>
