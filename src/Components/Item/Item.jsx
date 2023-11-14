@@ -49,7 +49,7 @@ const Item = (props) => {
         </div>
         <div className="cta row">
           <button className="btn btn-primary col-6 btn-cart shadow-none" onClick={() => { addToCart(props.id) }}>Add to Card</button>
-          <Link to='./cart'><button className="btn btn-primary col-6 btn-buy shadow-none " onClick={() => { addToCart(props.id) }}>Buy Now</button></Link>
+          <Link to='/cart'><button className="btn btn-primary col-6 btn-buy shadow-none " onClick={() => { addToCart(props.id) }}>Buy Now</button></Link>
         </div>
       </div>
     </div>
