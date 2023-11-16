@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./RegisterAndLogin.css";
 
-
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -18,7 +17,7 @@ function RegisterAndLogin() {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    if (type=='signup') {
+    if (type == "signup") {
       createUserWithEmailAndPassword(database, email, password)
         .then((data) => {
           console.log(data, "authData");
@@ -28,10 +27,10 @@ function RegisterAndLogin() {
           // swal((err.code), "You clicked the button!", "error");
           swal({
             icon: "error",
-            title: (err.code),
+            title: err.code,
           });
           // alert(err.code);
-          setLogin(true)
+          setLogin(true);
         });
     } else {
       signInWithEmailAndPassword(database, email, password)
@@ -43,14 +42,16 @@ function RegisterAndLogin() {
           // swal((err.code), "You clicked the button!", "error");
           swal({
             icon: "error",
-            title: (err.code),
+            title: err.code,
           });
           // alert(err.code);
         });
     }
   };
 
-
+  const handleReset = () => {
+    history("/reset");
+  };
 
   return (
     <div>
@@ -58,12 +59,10 @@ function RegisterAndLogin() {
         <div className="form-container">
           <div className="image-holder"></div>
 
-         
           <form onSubmit={(e) => handleSubmit(e, login ? "signin" : "signup")}>
-          <h2 className="text-center">
-            <strong>{login? 'LogIn': 'Create'}</strong> an account.
-            
-          </h2>
+            <h2 className="text-center">
+              <strong>{login ? "LogIn" : "Create"}</strong> an account.
+            </h2>
             <div className="form-group mb-2">
               <input
                 className="form-control"
@@ -110,11 +109,28 @@ function RegisterAndLogin() {
               </button>
             </div>
 
-            <s className="already" >
-              {login? 
-            <button className="btn btn-sm shadow-none  border-0 " onClick={()=>setLogin(false)}>You don't have an account? Click here.</button>:
-            <button className="btn btn-sm shadow-none  border-0 " onClick={()=>setLogin(true)}>You already have an account? Login here.</button>
-              }
+            <s className="already">
+              {login ? (
+                <button
+                  className="btn btn-sm shadow-none  border-0 "
+                  onClick={() => setLogin(false)}
+                >
+                  You don't have an account? Click here.
+                </button>
+              ) : (
+                <button
+                  className="btn btn-sm shadow-none  border-0 "
+                  onClick={() => setLogin(true)}
+                >
+                  You already have an account? Login here.
+                </button>
+              )}
+              <button
+                className="btn btn-sm shadow-none  border-0 "
+                onClick={handleReset}
+              >
+                Forgot Password
+              </button>
             </s>
           </form>
 

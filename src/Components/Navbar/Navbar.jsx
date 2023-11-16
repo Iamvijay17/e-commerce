@@ -116,12 +116,12 @@ function Navbar() {
 
           <a className="navbar-brand" href="/home">Fashion Pass</a>
 
-
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link to='/home'><a className="nav-link ">Home</a></Link>
               </li>
+
               <li className="nav-item">
                 <Link to='/mens'><a className="nav-link" >Mens</a></Link>
               </li>
